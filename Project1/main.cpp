@@ -499,7 +499,7 @@ void Setup() {
     Init();
     SetupCamera();
     ResetBall();
-    srand(GetTickCount());  // Initialize random seed
+    srand(GetTickCount64());  // Initialize random seed using GetTickCount64 to avoid overflow issues
 }
 
 // Main function
